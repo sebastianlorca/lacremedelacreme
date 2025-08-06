@@ -1,24 +1,24 @@
-
 /* Estilos base personalizados para La Crème de la Crème */
 
 .lacreme-wrapper {
-  background-color: #0e0e0e;
+  background-color: #000;
   color: #fff;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .bg-section {
   background-color: #1c1c1c;
 }
 
-.btn-success--pcf {  
-  background: #43D87E;
+.btn-success--pcf {
+  background: #43d87e;
   padding: 10px 20px;
   border-radius: 3px;
   text-align: center;
   font: normal normal bold 18px/21px Ubuntu;
   letter-spacing: 0px;
 }
+
 .lacreme-wrapper a.btn-success--pcf {
   color: #144126;
 }
@@ -32,6 +32,7 @@
   color: #000;
   border: none;
 }
+
 .btn-custom-success:hover {
   background-color: #3bcc73;
   color: #000;
@@ -44,28 +45,29 @@
 .accordion-item.bg-dark {
   background-color: #1c1c1c;
 }
+
 .accordion-button.bg-dark {
   background-color: #1c1c1c;
   color: #fff;
 }
 
-
-#hero-section{
-  background: url('img/Desktop/fondo-1-desk.png') no-repeat center center;
+#hero-section {
+  background: url("img/Mobile/fondo-1-mob.png") no-repeat center center;
   background-size: cover;
   padding: 260px 0;
   width: 100%;
   height: 100%;
-  min-width: 100vw;
-  min-height: 150dvh;
+  min-width: 100%;
+  min-height: 100vh;
 }
+
 #notebook-profesional {
-  background: url('img/Desktop/fondo-2-desk.png') no-repeat center center;
+  background: url("img/Desktop/fondo-2-desk.png") no-repeat center center;
   background-size: cover;
   padding: 260px 0;
   width: 100%;
   height: 100%;
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 150dvh;
 }
 
@@ -73,12 +75,15 @@
   text-wrap: balance;
 }
 
-.underbar-green-light {
-  border-bottom: 2px solid #43D87E;
+hr.underbar-green-light {
+  border-color: #43d87e;
+  border-style: solid;
+  border-width: 1px;
+  opacity: 1;
 }
 
 .hero-section-content {
-  min-height: 1070px;
+  min-height: 78vh;
   outline: 1px solid red;
 }
 
@@ -88,6 +93,28 @@
 }
 
 .pcf-txt-green--light {
-  color: #43D87E !important;
+  color: #43d87e !important;
   font-weight: 800;
+}
+
+
+@media (min-width: 576px) {
+  #hero-section {
+    background: url("img/Tablet/fondo-1-tab.png") no-repeat center center;
+    min-height: 140vh;
+  }
+  .hero-section-content {
+    min-height: 115vh;
+  }
+
+}
+
+@media (min-width: 768px) {
+  #hero-section {
+    background: url("img/Desktop/fondo-1-desk.png") no-repeat center center;
+    min-height: 150vh;
+  }
+  .hero-section-content {
+    min-height: 145vh;
+  }
 }
